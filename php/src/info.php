@@ -17,7 +17,7 @@ echo $b;
 echo "Shimahara";
 $c = "... edit ...";
 echo $c;
-echo ksasahara;
+echo "ksasahara";
 echo "mmori";
 echo('ykanai');
 echo "this is hshimizu";
