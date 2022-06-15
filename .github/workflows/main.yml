@@ -22,4 +22,4 @@ jobs:
           # SSH接続して、git pullする 
           echo "${{ secrets.EC2_PRIVATE_KEY }}" > private_key
           chmod 600 private_key
-          ssh -i private_key -l ${{ secrets.EC2_USER_NAME }} ${{ secrets.EC2_HOST_NAME }} "cd /home/ec2-user/tanzu-demo && git pull"
+          ssh -i private_key ec2-user@ec2-34-211-238-132.us-west-2.compute.amazonaws.com "cd /home/ec2-user/tanzu-demo && git pull"
